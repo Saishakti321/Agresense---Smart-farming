@@ -1,0 +1,540 @@
+[
+  {
+    "fertilizer": {
+      "predicted_fertilizer": "122.97381613490414",
+      "schedule": [
+        {
+          "action": "Apply 122.97381613490414 (fertilizer)",
+          "date": "2025-11-05",
+          "note": "Follow label dose. Avoid application during rain."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-06",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-07",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-08",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Apply 122.97381613490414 (fertilizer)",
+          "date": "2025-11-09",
+          "note": "Follow label dose. Avoid application during rain."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-10",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-11",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-12",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-13",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Apply 122.97381613490414 (fertilizer)",
+          "date": "2025-11-14",
+          "note": "Follow label dose. Avoid application during rain."
+        }
+      ]
+    },
+    "merged_schedule": [
+      {
+        "actions": [
+          {
+            "action": "Apply 122.97381613490414 (fertilizer)",
+            "kind": "fertilizer",
+            "note": "Follow label dose. Avoid application during rain."
+          },
+          {
+            "action": "Apply 12.574231760437149 (pesticide)",
+            "kind": "pesticide",
+            "note": "Follow label dose. Avoid application during rain."
+          }
+        ],
+        "date": "2025-11-05"
+      },
+      {
+        "actions": [
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "fertilizer",
+            "note": "Light irrigation if moisture < 50%."
+          },
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "pesticide",
+            "note": "Light irrigation if moisture < 50%."
+          }
+        ],
+        "date": "2025-11-06"
+      },
+      {
+        "actions": [
+          {
+            "action": "Monitor crop & soil",
+            "kind": "fertilizer",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          },
+          {
+            "action": "Monitor crop & soil",
+            "kind": "pesticide",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          }
+        ],
+        "date": "2025-11-07"
+      },
+      {
+        "actions": [
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "fertilizer",
+            "note": "Light irrigation if moisture < 50%."
+          },
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "pesticide",
+            "note": "Light irrigation if moisture < 50%."
+          }
+        ],
+        "date": "2025-11-08"
+      },
+      {
+        "actions": [
+          {
+            "action": "Apply 122.97381613490414 (fertilizer)",
+            "kind": "fertilizer",
+            "note": "Follow label dose. Avoid application during rain."
+          },
+          {
+            "action": "Apply 12.574231760437149 (pesticide)",
+            "kind": "pesticide",
+            "note": "Follow label dose. Avoid application during rain."
+          }
+        ],
+        "date": "2025-11-09"
+      },
+      {
+        "actions": [
+          {
+            "action": "Monitor crop & soil",
+            "kind": "fertilizer",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          },
+          {
+            "action": "Monitor crop & soil",
+            "kind": "pesticide",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          }
+        ],
+        "date": "2025-11-10"
+      },
+      {
+        "actions": [
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "fertilizer",
+            "note": "Light irrigation if moisture < 50%."
+          },
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "pesticide",
+            "note": "Light irrigation if moisture < 50%."
+          }
+        ],
+        "date": "2025-11-11"
+      },
+      {
+        "actions": [
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "fertilizer",
+            "note": "Light irrigation if moisture < 50%."
+          },
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "pesticide",
+            "note": "Light irrigation if moisture < 50%."
+          }
+        ],
+        "date": "2025-11-12"
+      },
+      {
+        "actions": [
+          {
+            "action": "Monitor crop & soil",
+            "kind": "fertilizer",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          },
+          {
+            "action": "Monitor crop & soil",
+            "kind": "pesticide",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          }
+        ],
+        "date": "2025-11-13"
+      },
+      {
+        "actions": [
+          {
+            "action": "Apply 122.97381613490414 (fertilizer)",
+            "kind": "fertilizer",
+            "note": "Follow label dose. Avoid application during rain."
+          },
+          {
+            "action": "Apply 12.574231760437149 (pesticide)",
+            "kind": "pesticide",
+            "note": "Follow label dose. Avoid application during rain."
+          }
+        ],
+        "date": "2025-11-14"
+      }
+    ],
+    "meta": {
+      "crop": "Wheat"
+    },
+    "pesticide": {
+      "predicted_pesticide": "12.574231760437149",
+      "schedule": [
+        {
+          "action": "Apply 12.574231760437149 (pesticide)",
+          "date": "2025-11-05",
+          "note": "Follow label dose. Avoid application during rain."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-06",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-07",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-08",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Apply 12.574231760437149 (pesticide)",
+          "date": "2025-11-09",
+          "note": "Follow label dose. Avoid application during rain."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-10",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-11",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-12",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-13",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Apply 12.574231760437149 (pesticide)",
+          "date": "2025-11-14",
+          "note": "Follow label dose. Avoid application during rain."
+        }
+      ]
+    },
+    "id": 1,
+    "created_at": "2025-11-04T21:27:45.629310"
+  },
+  {
+    "fertilizer": {
+      "predicted_fertilizer": "122.97381613490414",
+      "schedule": [
+        {
+          "action": "Apply 122.97381613490414 (fertilizer)",
+          "date": "2025-11-05",
+          "note": "Follow label dose. Avoid application during rain."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-06",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-07",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-08",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Apply 122.97381613490414 (fertilizer)",
+          "date": "2025-11-09",
+          "note": "Follow label dose. Avoid application during rain."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-10",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-11",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-12",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-13",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Apply 122.97381613490414 (fertilizer)",
+          "date": "2025-11-14",
+          "note": "Follow label dose. Avoid application during rain."
+        }
+      ]
+    },
+    "merged_schedule": [
+      {
+        "actions": [
+          {
+            "action": "Apply 122.97381613490414 (fertilizer)",
+            "kind": "fertilizer",
+            "note": "Follow label dose. Avoid application during rain."
+          },
+          {
+            "action": "Apply 12.574231760437149 (pesticide)",
+            "kind": "pesticide",
+            "note": "Follow label dose. Avoid application during rain."
+          }
+        ],
+        "date": "2025-11-05"
+      },
+      {
+        "actions": [
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "fertilizer",
+            "note": "Light irrigation if moisture < 50%."
+          },
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "pesticide",
+            "note": "Light irrigation if moisture < 50%."
+          }
+        ],
+        "date": "2025-11-06"
+      },
+      {
+        "actions": [
+          {
+            "action": "Monitor crop & soil",
+            "kind": "fertilizer",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          },
+          {
+            "action": "Monitor crop & soil",
+            "kind": "pesticide",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          }
+        ],
+        "date": "2025-11-07"
+      },
+      {
+        "actions": [
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "fertilizer",
+            "note": "Light irrigation if moisture < 50%."
+          },
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "pesticide",
+            "note": "Light irrigation if moisture < 50%."
+          }
+        ],
+        "date": "2025-11-08"
+      },
+      {
+        "actions": [
+          {
+            "action": "Apply 122.97381613490414 (fertilizer)",
+            "kind": "fertilizer",
+            "note": "Follow label dose. Avoid application during rain."
+          },
+          {
+            "action": "Apply 12.574231760437149 (pesticide)",
+            "kind": "pesticide",
+            "note": "Follow label dose. Avoid application during rain."
+          }
+        ],
+        "date": "2025-11-09"
+      },
+      {
+        "actions": [
+          {
+            "action": "Monitor crop & soil",
+            "kind": "fertilizer",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          },
+          {
+            "action": "Monitor crop & soil",
+            "kind": "pesticide",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          }
+        ],
+        "date": "2025-11-10"
+      },
+      {
+        "actions": [
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "fertilizer",
+            "note": "Light irrigation if moisture < 50%."
+          },
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "pesticide",
+            "note": "Light irrigation if moisture < 50%."
+          }
+        ],
+        "date": "2025-11-11"
+      },
+      {
+        "actions": [
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "fertilizer",
+            "note": "Light irrigation if moisture < 50%."
+          },
+          {
+            "action": "Irrigate / Maintain",
+            "kind": "pesticide",
+            "note": "Light irrigation if moisture < 50%."
+          }
+        ],
+        "date": "2025-11-12"
+      },
+      {
+        "actions": [
+          {
+            "action": "Monitor crop & soil",
+            "kind": "fertilizer",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          },
+          {
+            "action": "Monitor crop & soil",
+            "kind": "pesticide",
+            "note": "Check for pest symptoms, moisture, leaf color."
+          }
+        ],
+        "date": "2025-11-13"
+      },
+      {
+        "actions": [
+          {
+            "action": "Apply 122.97381613490414 (fertilizer)",
+            "kind": "fertilizer",
+            "note": "Follow label dose. Avoid application during rain."
+          },
+          {
+            "action": "Apply 12.574231760437149 (pesticide)",
+            "kind": "pesticide",
+            "note": "Follow label dose. Avoid application during rain."
+          }
+        ],
+        "date": "2025-11-14"
+      }
+    ],
+    "meta": {
+      "crop": "Wheat"
+    },
+    "pesticide": {
+      "predicted_pesticide": "12.574231760437149",
+      "schedule": [
+        {
+          "action": "Apply 12.574231760437149 (pesticide)",
+          "date": "2025-11-05",
+          "note": "Follow label dose. Avoid application during rain."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-06",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-07",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-08",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Apply 12.574231760437149 (pesticide)",
+          "date": "2025-11-09",
+          "note": "Follow label dose. Avoid application during rain."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-10",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-11",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Irrigate / Maintain",
+          "date": "2025-11-12",
+          "note": "Light irrigation if moisture < 50%."
+        },
+        {
+          "action": "Monitor crop & soil",
+          "date": "2025-11-13",
+          "note": "Check for pest symptoms, moisture, leaf color."
+        },
+        {
+          "action": "Apply 12.574231760437149 (pesticide)",
+          "date": "2025-11-14",
+          "note": "Follow label dose. Avoid application during rain."
+        }
+      ]
+    },
+    "id": 2,
+    "created_at": "2025-11-04T21:46:27.203753"
+  }
+]

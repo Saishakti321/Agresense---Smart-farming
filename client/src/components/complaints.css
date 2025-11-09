@@ -1,0 +1,145 @@
+.complaint-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4caf50, #1b5e20);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Glass Card */
+  .glass-card {
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.2);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    color: #fff;
+    animation: fadeSlide .6s ease-out;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  
+  .subtitle {
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.85);
+    border: none;
+    font-size: 15px;
+  }
+  
+  .textarea {
+    height: 110px;
+    resize: none;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: #2e7d32;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .btn:hover {
+    background: #1b5e20;
+    transform: scale(1.03);
+  }
+  
+  /* Loader */
+  .loader {
+    width: 22px;
+    height: 22px;
+    border: 3px solid white;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+  }
+  
+  /* Complaints list */
+  .list-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  }
+  
+  .list-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #2e7d32;
+  }
+  
+  .list-box {
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 8px;
+  }
+  
+  .list-item {
+    background: #f1f8e9;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    border-left: 4px solid #2e7d32;
+  }
+  
+  .small {
+    font-size: 13px;
+    opacity: 0.8;
+  }
+  
+  .no-data {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+  }
+  
+  .success-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #ffffffea;
+    color: #2e7d32;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    position: fixed;
+    top: 20px;
+    animation: slideDown .4s ease;
+  }
+  
+  /* Animations */
+  @keyframes spin {
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(40px); }
+  }
+  
+  @keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+  }
+  

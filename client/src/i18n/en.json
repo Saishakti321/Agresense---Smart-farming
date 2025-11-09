@@ -1,0 +1,29 @@
+{
+  "title": "AgriSense Smart Farming Advisor",
+  "mode_manual": "Manual Mode",
+  "mode_auto": "Auto Mode",
+  "temperature": "Temperature (°C)",
+  "humidity": "Humidity (%)",
+  "moisture": "Moisture (%)",
+  "soil_type": "Soil Type",
+  "crop": "Crop",
+  "submit": "Generate Plan",
+  
+
+
+
+  "AgriSense Smart Dashboard": "AgriSense Smart Dashboard",
+  "AI Crop Suggestion": "AI Crop Suggestion",
+  "Chatbot Assistant": "Chatbot Assistant",
+  "Irrigation Planner": "Irrigation Planner",
+  "Fertilizer Advisor": "Fertilizer Advisor",
+  "Sustainability Report": "Sustainability Report",
+  "AI Plant Doctor": "AI Plant Doctor",
+  "Get the best crop for your soil & weather": "Get the best crop for your soil & weather",
+  "Ask AgriSense anything about farming": "Ask AgriSense anything about farming",
+  "Plan watering schedules smartly": "Plan watering schedules smartly",
+  "Get balanced fertilizer usage info": "Get balanced fertilizer usage info",
+  "View eco impact & carbon footprint": "View eco impact & carbon footprint",
+  "Check Crop Desease": "Check Crop Desease",
+  "Empowering farmers and professionals with AI-driven insights to cultivate smarter, conserve resources, and grow sustainably.": "Empowering farmers and professionals with AI-driven insights to cultivate smarter, conserve resources, and grow sustainably."
+}

@@ -1,0 +1,28 @@
+{
+  "title": "एग्रीसेंस स्मार्ट फार्मिंग सलाहकार",
+  "mode_manual": "मैनुअल मोड",
+  "mode_auto": "ऑटो मोड",
+  "temperature": "तापमान (°C)",
+  "humidity": "आर्द्रता (%)",
+  "moisture": "नमी (%)",
+  "soil_type": "मिट्टी का प्रकार",
+  "crop": "फसल",
+  "submit": "योजना बनाएं",
+
+  
+
+  "AgriSense Smart Dashboard": "एग्रीसेंस स्मार्ट डैशबोर्ड",
+  "AI Crop Suggestion": "एआई फसल सुझाव",
+  "Chatbot Assistant": "चैटबॉट सहायक",
+  "Irrigation Planner": "सिंचाई योजनाकार",
+  "Fertilizer Advisor": "उर्वरक सलाहकार",
+  "Sustainability Report": "सस्टेनेबिलिटी रिपोर्ट",
+  "AI Plant Doctor": "एआई पौधा डॉक्टर",
+  "Get the best crop for your soil & weather": "अपनी मिट्टी और मौसम के अनुसार सबसे अच्छी फसल पाएं",
+  "Ask AgriSense anything about farming": "खेती से जुड़ा कोई भी सवाल एग्रीसेंस से पूछें",
+  "Plan watering schedules smartly": "स्मार्ट तरीके से पानी देने की योजना बनाएं",
+  "Get balanced fertilizer usage info": "संतुलित उर्वरक उपयोग की जानकारी प्राप्त करें",
+  "View eco impact & carbon footprint": "पर्यावरण प्रभाव और कार्बन फुटप्रिंट देखें",
+  "Check Crop Desease": "फसल रोग की पहचान करें",
+  "Empowering farmers and professionals with AI-driven insights to cultivate smarter, conserve resources, and grow sustainably.": "किसानों और विशेषज्ञों को एआई-आधारित जानकारी देकर समझदारी से खेती करने, संसाधन बचाने और टिकाऊ तरीके से बढ़ने के लिए सशक्त बनाना।"
+}

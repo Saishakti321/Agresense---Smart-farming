@@ -1,0 +1,29 @@
+{
+  "title": "ଏଗ୍ରିସେନ୍ସ ସ୍ମାର୍ଟ ଚାଷୀ ସହାୟକ",
+  "mode_manual": "ମାନୁଆଲ ମୋଡ୍",
+  "mode_auto": "ଅଟୋ ମୋଡ୍",
+  "temperature": "ତାପମାନ (°C)",
+  "humidity": "ଆର୍ଦ୍ରତା (%)",
+  "moisture": "ନମି (%)",
+  "soil_type": "ମାଟିର ପ୍ରକାର",
+  "crop": "ଫସଲ",
+  "submit": "ପ୍ରକଳ୍ପ ତିଆରି କରନ୍ତୁ",
+
+
+
+
+  "AgriSense Smart Dashboard": "ଏଗ୍ରିସେନ୍ସ ସ୍ମାର୍ଟ ଡ୍ୟାସବୋର୍ଡ",
+  "AI Crop Suggestion": "ଏଆଇ ଫସଲ ପରାମର୍ଶ",
+  "Chatbot Assistant": "ଚାଟବୋଟ ସହାୟକ",
+  "Irrigation Planner": "ପାନିସେଚନ ଯୋଜନାକାରୀ",
+  "Fertilizer Advisor": "ସର ପରାମର୍ଶକାରୀ",
+  "Sustainability Report": "ସସ୍ଥିତି ରିପୋର୍ଟ",
+  "AI Plant Doctor": "ଏଆଇ ଗଛ ଡାକ୍ତର",
+  "Get the best crop for your soil & weather": "ଆପଣଙ୍କ ମାଟି ଓ ପାଣିପାଗ ପାଇଁ ଭଲତମ ଫସଲ ଚୟନ କରନ୍ତୁ",
+  "Ask AgriSense anything about farming": "କୃଷି ବିଷୟରେ ଏଗ୍ରିସେନ୍ସକୁ କିଛି ମଧ୍ୟ ପଚାରନ୍ତୁ",
+  "Plan watering schedules smartly": "ପାନି ସେଚନ ସମୟସାରିଣୀ ସୁବିଚାରିତ ଭାବରେ ଯୋଜନା କରନ୍ତୁ",
+  "Get balanced fertilizer usage info": "ସନ୍ତୁଳିତ ସର ବ୍ୟବହାର ସମ୍ବନ୍ଧୀୟ ସୂଚନା ପାଆନ୍ତୁ",
+  "View eco impact & carbon footprint": "ପରିବେଶ ପ୍ରଭାବ ଓ କାର୍ବନ ଫୁଟପ୍ରିଣ୍ଟ ଦେଖନ୍ତୁ",
+  "Check Crop Desease": "ଫସଲ ରୋଗ ଯାଞ୍ଚ କରନ୍ତୁ",
+  "Empowering farmers and professionals with AI-driven insights to cultivate smarter, conserve resources, and grow sustainably.": "କୃଷକ ଓ ବିଶେଷଜ୍ଞମାନଙ୍କୁ ଏଆଇ ଆଧାରିତ ତଥ୍ୟ ସହିତ ସୁଦୃଢ କରି ସୁବୁଦ୍ଧି ଚାଷ, ସମ୍ପଦ ସଂରକ୍ଷଣ ଓ ସସ୍ଥିତିଶୀଳ ଉନ୍ନତି ପାଇଁ ସାହାଯ୍ୟ କରାଯାଉଛି।"
+}
