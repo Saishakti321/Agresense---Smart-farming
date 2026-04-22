@@ -3,7 +3,7 @@ const con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "Sai@1234",
-    database: "agresence_db",
+    database: "agrisense_db",
   });
   
 

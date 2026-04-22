@@ -142,9 +142,6 @@ const MandiMarketAnalysis = () => {
     return data;
   }, []);
 
-  // -----------------------------
-  // Fetch API data
-  // -----------------------------
   const fetchMarketData = useCallback(async () => {
     setLoading(true);
     try {
@@ -194,9 +191,6 @@ const MandiMarketAnalysis = () => {
     fetchMarketData();
   }, [fetchMarketData]);
 
-  // -----------------------------
-  // Stats calculation
-  // -----------------------------
   const calculateStats = useCallback((data) => {
     if (data.length === 0) {
       setPriceStats(null);
@@ -229,9 +223,6 @@ const MandiMarketAnalysis = () => {
     }
   }, []);
 
-  // -----------------------------
-  // Filters & sorting
-  // -----------------------------
   const processedData = useMemo(() => {
     let filtered = [...marketData];
     if (selectedState)
@@ -268,9 +259,7 @@ const MandiMarketAnalysis = () => {
     calculateStats(processedData);
   }, [processedData, calculateStats]);
 
-  // -----------------------------
-  // Render Section
-  // -----------------------------
+ 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 p-6">
       <div className="max-w-7xl mx-auto">

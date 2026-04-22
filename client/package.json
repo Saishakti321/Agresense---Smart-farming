@@ -1,5 +1,6 @@
 {
-  "name": "incident_management",
+  "homepage": "https://Saishakti321.github.io/Agresense---Smart-farming",
+  "name": "smart-farming",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +11,7 @@
     "axios": "^1.13.1",
     "bootstrap": "^5.3.1",
     "chart.js": "^4.5.1",
+    "dotenv": "^17.4.2",
     "formik": "^2.4.3",
     "framer-motion": "^12.23.24",
     "i18next": "^25.6.0",
@@ -39,7 +41,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -58,5 +62,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.3.0"
   }
 }

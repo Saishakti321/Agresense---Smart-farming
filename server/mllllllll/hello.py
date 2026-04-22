@@ -1,4 +1,3 @@
-# generate_indian_agri_dataset.py
 import csv, random, math
 random.seed(42)
 
@@ -37,7 +36,7 @@ seasons = ["Kharif","Rabi","Zaid"]
 
 def clamp(x, a, b): return max(a, min(b, x))
 def rand_normal(mean_v, std_v):
-    # simple Box-Muller
+
     u1, u2 = random.random(), random.random()
     z0 = math.sqrt(-2.0 * math.log(max(u1,1e-12))) * math.cos(2*math.pi*u2)
     return mean_v + z0 * std_v

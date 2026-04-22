@@ -4,3 +4,4 @@
 *.pack
 *.h5
 *.pkl
+.env
