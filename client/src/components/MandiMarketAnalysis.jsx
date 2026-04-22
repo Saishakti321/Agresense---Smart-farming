@@ -49,9 +49,7 @@ const MandiMarketAnalysis = () => {
   const [viewMode, setViewMode] = useState("grid");
   const [sortBy, setSortBy] = useState("price-high");
 
-  // -----------------------------
-  // Generate sample data (fallback)
-  // -----------------------------
+
   const generateSampleData = useCallback(() => {
     const sampleStates = [
       "Maharashtra",

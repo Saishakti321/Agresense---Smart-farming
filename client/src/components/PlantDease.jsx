@@ -85,7 +85,6 @@ export default function CropAIDoctor() {
 
   return (
     <div className="container">
-      {/* Internal CSS */}
       <style>{`
         body {
           margin: 0;
@@ -199,7 +198,7 @@ export default function CropAIDoctor() {
         }
       `}</style>
 
-      {/* Header */}
+
       <header className="header">
         <h1>
           <Leaf size={28} color="#10b981" /> Crop AI Doctor
@@ -213,7 +212,7 @@ export default function CropAIDoctor() {
         />
       </header>
 
-      {/* Main Section */}
+
       <main>
         <motion.div
           className="card"
@@ -259,7 +258,7 @@ export default function CropAIDoctor() {
             </button>
           </div>
 
-          {/* Crop Input + Predict */}
+
           <div style={{ marginTop: "20px", textAlign: "center" }}>
             <input
               placeholder="🌾 Crop name"
@@ -285,14 +284,14 @@ export default function CropAIDoctor() {
             </button>
           </div>
 
-          {/* Error */}
+
           {error && (
             <p style={{ color: "red", textAlign: "center", marginTop: "10px" }}>
               {error}
             </p>
           )}
 
-          {/* Result */}
+
           {result && top && (
             <motion.div
               className="result"
@@ -309,7 +308,7 @@ export default function CropAIDoctor() {
                 ))}
               </ul>
               <button className="btn" onClick={reset}>
-                🔄 New Analysis
+                 New Analysis
               </button>
             </motion.div>
           )}

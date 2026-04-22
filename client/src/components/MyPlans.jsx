@@ -13,7 +13,7 @@ export default function MyPlans() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  // 🔄 Fetch plans
+
   const fetchPlans = async () => {
     const id = localStorage.getItem("id");
     if (!id) {
@@ -40,7 +40,7 @@ export default function MyPlans() {
     fetchPlans();
   }, []);
 
-  // ❌ Delete plan
+
   const deletePlan = async (id) => {
     if (!window.confirm("Delete this plan?")) return;
     try {
@@ -59,7 +59,7 @@ export default function MyPlans() {
     }
   };
 
-  // 📋 View plan in modal
+
   const openPlanModal = (plan) => {
     try {
       const parsed = typeof plan === "string" ? JSON.parse(plan) : plan || [];
@@ -82,7 +82,7 @@ export default function MyPlans() {
           fontFamily: "'Poppins', sans-serif",
         }}
       >
-        {/* Header Section */}
+
         <div
           className="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 p-3 rounded-4 shadow-lg"
           style={{
@@ -103,7 +103,7 @@ export default function MyPlans() {
           </Button>
         </div>
 
-        {/* Alerts */}
+
         {message && (
           <div className="alert alert-success text-center fw-semibold py-2 fade-in rounded-3 shadow-sm">
             {message}
@@ -115,7 +115,7 @@ export default function MyPlans() {
           </div>
         )}
 
-        {/* Loading Spinner */}
+
         {loading && (
           <div className="text-center py-5">
             <Spinner animation="border" variant="success" />
@@ -123,7 +123,8 @@ export default function MyPlans() {
           </div>
         )}
 
-        {/* Table */}
+
+
         {!loading && (
           <div
             className="table-responsive shadow-lg rounded-4 bg-white p-2 p-md-3 fade-in"
@@ -166,7 +167,7 @@ export default function MyPlans() {
                   </tr>
                 ) : (
                   plans.map((p, i) => (
-                    /* use a stable key (p.id) so React preserves DOM nodes correctly */
+
                     <tr
                       key={p.id ?? i}
                       className="table-row-anim"
@@ -175,10 +176,10 @@ export default function MyPlans() {
                         transition: "all 0.3s ease",
                       }}
                     >
-                      {/* Display serial number (1-based) so numbers remain contiguous after deletes */}
+                     
                       <td>{i + 1}</td>
 
-                      {/* keep using p.created_at, p.crop, etc. — logic unchanged */}
+                     
                       <td>
                         {p.created_at
                           ? new Date(p.created_at).toLocaleDateString()
@@ -232,7 +233,7 @@ export default function MyPlans() {
         )}
       </div>
 
-      {/* Modal */}
+
       <Modal
         show={!!selectedPlan}
         onHide={closePlanModal}
@@ -295,7 +296,7 @@ export default function MyPlans() {
         </Modal.Footer>
       </Modal>
 
-      {/* ✨ Animations & Styles */}
+
       <style>{`
         .fade-in { animation: fadeIn 0.7s ease-in-out; }
         .table-row-anim:hover {

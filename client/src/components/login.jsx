@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
-import farmerAnimation from "../assets/farmer.json"; // 🌾 Lottie animation
+import farmerAnimation from "../assets/farmer.json"; 
 
 export default function Login() {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ export default function Login() {
     event.preventDefault();
     setError("");
     if (!username || !password) {
-      setError("⚠️ Please enter both Email and Password.");
+      setError(" Please enter both Email and Password.");
       return;
     }
     setLoading(true);
@@ -30,7 +30,7 @@ export default function Login() {
       });
       const data = await response.json();
       if (!data.isAuth || !data.user) {
-        setError("❌ Incorrect Email or Password.");
+        setError(" Incorrect Email or Password.");
         setLoading(false);
         return;
       }
@@ -42,7 +42,7 @@ export default function Login() {
         navigate("/RoleDashboard", { state: { message: role } });
       else navigate("/Dashboard");
     } catch {
-      setError("🌐 Network error. Please check your connection.");
+      setError(" Network error. Please check your connection.");
     } finally {
       setLoading(false);
     }
@@ -52,7 +52,6 @@ export default function Login() {
     <div style={styles.container}>
       <div style={styles.overlay}></div>
 
-      {/* Popup animated card */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8, y: 50 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -111,7 +110,6 @@ export default function Login() {
         </form>
       </motion.div>
 
-      {/* Animations */}
       <style>{`
         @keyframes gradientFlow {
           0% { background-position: 0% 50%; }

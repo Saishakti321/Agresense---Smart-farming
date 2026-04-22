@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
-import farmingAnimation from "../assets/register.json"; // <- your Lottie file
+import farmingAnimation from "../assets/register.json";
 
 export default function Register() {
   const navigate = useNavigate();

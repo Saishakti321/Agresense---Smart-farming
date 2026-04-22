@@ -24,10 +24,12 @@ export default function AISuggestion() {
   const [result, setResult] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
-  const WEATHER_API = "5b966ddef50370f78a15f7f0f8544ea6";
+require('dotenv').config();
 
-  // 🌍 AUTO FETCH
-  useEffect(() => {
+const WEATHER_API = process.env.API_KEY;
+
+
+useEffect(() => {
     if (form.mode !== "auto") return;
 
     const fetchAutoData = async () => {
@@ -76,7 +78,7 @@ export default function AISuggestion() {
 
   const fetchSoilPh = () => 6.5;
 
-  // MANUAL FETCH
+  
   const fetchManualData = async () => {
     if (!form.city) return setError("Please enter a city");
 
@@ -98,11 +100,11 @@ export default function AISuggestion() {
         moisture: (weatherData.main?.humidity * 0.5).toFixed(1),
       }));
     } catch {
-      setError("❌ Failed to fetch weather data.");
+      setError(" Failed to fetch weather data.");
     }
   };
 
-  // AI Suggestion
+
   const getAISuggestion = async () => {
     try {
       const payload = {
@@ -189,7 +191,8 @@ export default function AISuggestion() {
                 />
               </div>
 
-              {/* City Input */}
+
+
               {form.mode === "manual" && (
                 <div className="d-flex flex-column align-items-center mb-4">
                   <Form.Control
@@ -205,7 +208,8 @@ export default function AISuggestion() {
                 </div>
               )}
 
-              {/* Input Fields */}
+
+
               <div className="row g-3 justify-content-center align-items-center text-start">
                 <div className="col-md-6">
                   <Form.Group controlId="temperature">
@@ -284,7 +288,7 @@ export default function AISuggestion() {
                       Analyzing...
                     </>
                   ) : (
-                    "🧠 Get AI Suggestion"
+                    " Get AI Suggestion"
                   )}
                 </Button>
               </div>
@@ -299,7 +303,8 @@ export default function AISuggestion() {
         </Card>
       </div>
 
-      {/* Modal */}
+
+
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         <Modal.Header
           closeButton
@@ -327,7 +332,8 @@ export default function AISuggestion() {
         </Modal.Footer>
       </Modal>
 
-      {/* Styles */}
+
+
       <style>{`
         @keyframes fadeIn {
           from {opacity: 0; transform: translateY(15px);}

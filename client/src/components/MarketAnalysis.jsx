@@ -49,9 +49,7 @@ const MarketAnalysis = () => {
   const [viewMode, setViewMode] = useState("grid");
   const [sortBy, setSortBy] = useState("price-high");
 
-  // -----------------------------
-  // Generate sample data (fallback)
-  // -----------------------------
+  
   const generateSampleData = useCallback(() => {
     const sampleStates = [
       "Maharashtra",
@@ -142,9 +140,8 @@ const MarketAnalysis = () => {
     return data;
   }, []);
 
-  // -----------------------------
-  // Fetch API data
-  // -----------------------------
+
+
   const fetchMarketData = useCallback(async () => {
     setLoading(true);
     try {
@@ -194,9 +191,8 @@ const MarketAnalysis = () => {
     fetchMarketData();
   }, [fetchMarketData]);
 
-  // -----------------------------
-  // Stats calculation
-  // -----------------------------
+ 
+
   const calculateStats = useCallback((data) => {
     if (data.length === 0) {
       setPriceStats(null);
@@ -229,9 +225,8 @@ const MarketAnalysis = () => {
     }
   }, []);
 
-  // -----------------------------
-  // Filters & sorting
-  // -----------------------------
+ 
+
   const processedData = useMemo(() => {
     let filtered = [...marketData];
     if (selectedState)
@@ -268,9 +263,8 @@ const MarketAnalysis = () => {
     calculateStats(processedData);
   }, [processedData, calculateStats]);
 
-  // -----------------------------
-  // Render Section
-  // -----------------------------
+ 
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 p-6">
       <div className="max-w-7xl mx-auto">

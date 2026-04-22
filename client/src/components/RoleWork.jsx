@@ -5,12 +5,10 @@ import Snav from "./sidenav";
 function RoleWork() {
   const [data1, setData1] = useState([]);
   const[success,setSuccess]=useState("");
-  // const[acc,setAcc]=useState("Accept");
   
   const location = useLocation();
  
 
-  // const [status,setStatus]=useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -18,30 +16,10 @@ function RoleWork() {
   }, [success]);
  
   const { message } = location.state || { message: "No message received" };
-  //  alert(message);
+  
   const role =message;
   const name=localStorage.getItem('name');
-//   alert(role);
-//   const GetAPICAll = () => {
-//     fetch("http://localhost:1000/RoleWise")
-//       .then((res) => res.json())
-//       .then(
-//         (result) => {
-//           // setStatus(result[0].status);
-//           // alert(status);
-//         setData1(result);
-//         setSuccess(result.success)
-//         setTimeout(() => {
-//           // navigate('MyComplain');
-//           setSuccess('');
-         
-//         },1000);
-//         },
-//         (error) => {
-//           console.error("Error fetching data:", error);
-//         }
-//       );
-//   };
+
 const  GetAPICAll=async ()=>{
      try{
        
@@ -51,7 +29,7 @@ const  GetAPICAll=async ()=>{
        const status=data[0].status;
        console.log(status);
        
-      //  const data = await response.json();
+
        if(response.ok){
         console.log("Completed")
        }
@@ -62,17 +40,18 @@ const  GetAPICAll=async ()=>{
 }
 
  const Accept=async (id)=>{
-//     setAcc("Accepted");
-try{
+
+  try{
        
     const response= await fetch(`http://localhost:1000/Accept?id=${id}&id1=${name}`);
     const data = await response.json();
-    // alert(data);
-    // setData1(data);
+    
+
     if(response.ok){
      console.log("Completed")
      
-    //  setAcc("Accepted");
+   
+     
     }
 
   }catch(error){
@@ -135,9 +114,7 @@ const Uncomplete=async(id)=>{
               <th style={{ padding: "8px", border: "1px solid #ddd" }}>Accept</th>
               <th style={{ padding: "8px", border: "1px solid #ddd" }}>Complete</th>
               <th style={{ padding: "8px", border: "1px solid #ddd" }}>Reject</th>
-                {/* <th style={{ padding: "8px", border: "1px solid #ddd" }}>Reject</th> */}
-                {/* <th style={{ padding: "8px", border: "1px solid #ddd" }}>Status</th> */}
-        
+               
                 
 
               </tr>
@@ -148,7 +125,7 @@ const Uncomplete=async(id)=>{
                   <td style={{ padding: "8px", border: "1px solid #ddd" }}>{head.id}</td>
                   <td style={{ padding: "8px", border: "1px solid #ddd" }}>{head.date}</td>
                   <td style={{ padding: "8px", border: "1px solid #ddd" }}>{head.fname} {head.lname}</td>
-                  {/* <td style={{ padding: "8px", border: "1px solid #ddd" }}>{head.lname}</td> */}
+                 
                   <td style={{ padding: "8px", border: "1px solid #ddd" }}>{head.campus}</td>
                   <td style={{ padding: "8px", border: "1px solid #ddd" }}>{head.email}</td>
                   <td style={{ padding: "8px", border: "1px solid #ddd" }}>{head.typeofplaces}</td>
@@ -190,8 +167,7 @@ const Uncomplete=async(id)=>{
                     </td>
                    
                  
-                    {/* <td style={{ padding: "8px", border: "1px solid #ddd" }}>{head.status}</td> */}
-
+                   
                 </tr>
               ))}
             </tbody>

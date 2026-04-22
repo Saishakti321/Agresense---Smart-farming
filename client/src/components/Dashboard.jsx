@@ -67,7 +67,7 @@ const Dashboard = () => {
     },
   ];
 
-  // Floating crops effect
+
   useEffect(() => {
     const container = document.getElementById("crop-background");
     if (!container) return;
@@ -94,7 +94,8 @@ const Dashboard = () => {
         padding: "40px 20px",
       }}
     >
-      {/* Floating crops */}
+
+
       <div
         id="crop-background"
         style={{
@@ -108,7 +109,7 @@ const Dashboard = () => {
         }}
       ></div>
 
-      {/* Heading */}
+
       <div
         style={{
           textAlign: "center",
@@ -153,7 +154,8 @@ const Dashboard = () => {
         </p>
       </div>
 
-      {/* Feature cards */}
+
+
       <div
         style={{
           display: "grid",

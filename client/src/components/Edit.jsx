@@ -20,7 +20,6 @@ function Edit() {
   const [typeofplace, settypeofplace] = useState("");
 
   const [typeofdamage, settypeofdamage] = useState("");
-  // const[id,setId]=useState("");
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
   const [userData, setUserData] = useState(null);
@@ -38,116 +37,16 @@ function Edit() {
     file: yup.mixed().required(),
     terms: yup.bool().required().oneOf([true], "terms must be accepted"),
   });
-  // const savedata = () => {
-  //   try {
-  //     debugger;
-
-  //     debugger;
-  //     console.log(fname, lname,email, campus, typeofdamage,typeofplace);
-
-  //   } catch (error) {
-  //     debugger;
-  //     console.log(error);
-  //   }
-  // };
-
-  //const navigate = useNavigate();
-  //   const savedata=()=> {
-  //     debugger
-  //     alert("button clicked")
-  //     //fetrch ra post method
-
-  //     const date = new Date();
-  //     console.log(date);
-
-  //     debugger
-  //     fetch("http://localhost:1000/User",{
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       },
-  //       body: JSON.stringify({
-
-  //         "fname":fname,
-  //         "lname":lname,
-  //         "campus":campus,
-  //         "email" : email,
-  //         "typeofdamage":typeofdamage,
-  //         "typeofplace":typeofplace,
-  //         "date":date
-
-  //   }),
-  //       // body:JSON.stringify(password)
-
-  //     })
-  //              .then(res => res.json())
-  //              .then(
-  //                 (result) => {
-  //                   if(result!==0){
-  //                     navigate('/success');
-
-  //                   }
-  //                   debugger
-  //                 //  if(result.length===0){
-  //                 //   alert("Invalid Username or Password");
-  //                 //  }
-  //                 //  else{
-  //                 //   // navigate('/User');
-
-  //                 //  }
-  //                    console.log(result);
-  //                    debugger
-  //                 },
-  //                 (error) => {
-  //                  console.log('Error:', error);
-  //                 }
-  //              )
-
-  //  }
+ 
   const navigate = useNavigate();
 
-  // const saveData = async () => {
-  //   debugger;
-  //   // alert("button clicked");
-
-  //   const date = new Date();
-  //   console.log(date);
-
-  //   try {
-  //     const response = await fetch("http://localhost:1000/User", {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       },
-  //       body: JSON.stringify({
-  //         "fname": fname,
-  //         "lname": lname,
-  //         "campus": campus,
-  //         "email": email,
-  //         "typeofdamage": typeofdamage,
-  //         "typeofplace": typeofplace,
-  //         "date": date
-  //       })
-  //     });
-
-  //     const result = await response.json();
-
-  //     if (result !== 0) {
-  //       navigate('/success');
-  //     }
-
-  //     console.log(result);
-  //     debugger;
-
-  //   } catch (error) {
-  //     console.log('Error:', error);
-  //   }
-  // }
+  
+  
   const location = useLocation();
   const { message } = location.state || { message: "No message received" };
-  //  alert(message);
+
   const id = message;
-  //   alert(id);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -159,39 +58,39 @@ function Edit() {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-      //alert("working");
+      
 
       const data = await response.json();
-      //   console.log(data);
+
+      
       setfname(data[0].fname);
-      //   alert(data[0].lname);
+
+    
       setlname(data[0].lname);
       setemail(data[0].email);
       setcampus(data[0].campus);
       settypeofdamage(data[0].typeofdamage);
       settypeofplace(data[0].typeofplaces);
-       // alert(data[0].typeofplaces);
+      
 
-      //   modifydat(data);
 
-      // console.log(data);
       setUserData(data);
       setLoading(false);
     } catch (error) {
       setError(error.message);
       setLoading(false);
-      // alert("error");
+      
+
     }
   };
 
   const Updatedata = async (event) => {
     const id1 = localStorage.getItem("id");
-    // alert(id);
+    
     const date = new Date();
     event.preventDefault();
     setSubmitted(false);
     setError("");
-    //alert(id, id1);
 
     const formData = {
       fname,
@@ -204,7 +103,9 @@ function Edit() {
       id,
       id1,
     };
-    //alert(formData);
+    
+
+    
     if (
       fname === undefined &&
       lname === undefined &&
